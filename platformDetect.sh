@@ -83,10 +83,12 @@ if [[ ${modelName} == "ARM"* ]]; then
 		echo "Samsung Artik"
 	elif [[ ${raspberryModel} == "Raspberry"* ]]; then
 		echo ${raspberryModel}
+	elif [[ ${raspberryModel} == "Libre"* ]]; then
+		echo ${raspberryModel/Libre Computer}
 	else
 		echo $raspberryVer
 	fi
-	
+
 elif [[ ${hardwareField} == *"sun8i"* ]]; then
 	echo "sun8i based Pi Clone"
 else
