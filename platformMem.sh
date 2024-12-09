@@ -46,6 +46,7 @@ if [[ ${modelName} == "ARM"* ]]; then
 	*a02082) raspberryVer="Pi 3 Model B Rev 1.2 (1GB) - Sony, UK";;
 	*a020a0) raspberryVer="CM3 Rev 1.0 (1GB) - Sony, UK";;
 	*a020d3) raspberryVer="Pi 3 Model B+ Rev 1.3 (1GB) - Sony, UK";;
+	*a020d4) raspberryVer='Pi 3 Model B+ Rev 1.4 (1GB) - Sony, UK';;
 	*a21041) raspberryVer="Pi 2 Model B Rev 1.1 (1GB) - Embest, CH";;
 	*a22042) raspberryVer="Pi 2 Model B Rev 1.2 (1GB) - Embest, CH";;
 	*a22082) raspberryVer="Pi 3 Model B Rev 1.2 (1GB) - Embest, CH";;
