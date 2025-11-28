@@ -83,6 +83,14 @@ if [[ ${modelName} == "ARM"* ]]; then
 	*d04170) raspberryVer="Pi 5 Model B Rev 1.0 (8GB) - Sony, UK";;
 	*d04171) raspberryVer="Pi 5 Model B Rev 1.1 (8GB) - Sony, UK";;
 	*e04171) raspberryVer="Pi 5 Model B Rev 1.1 (16GB) - Sony, UK";;
+	*b04180) raspberryVer="CM5 Rev 1.0 2GB";;
+	*c04180) raspberryVer="CM5 Rev 1.0 4GB";;
+	*d04180) raspberryVer="CM5 Rev 1.0 8GB";;
+	*d04190) raspberryVer="500 Rev 1.0 8GB";;
+	*b041a0) raspberryVer="CM5 Lite Rev 1.0 2GB";;
+	*c041a0) raspberryVer="CM5 Lite Rev 1.0 4GB";;
+	*d041a0) raspberryVer="CM5 Lite Rev 1.0 8GB";;
+
 	*) raspberryVer="Unknown ARM based System";;
 	esac
 
