@@ -111,7 +111,7 @@ if [[ ${modelName} == "ARM"* ]]; then
 elif [[ ${hardwareField} == *"sun8i"* ]]; then
 	echo "sun8i based Pi Clone"
 else
-	echo "Generic "`uname -p`" class computer"
+	echo "Generic \"$(uname -mp)\" class computer"
 fi
 
 # workaround to check if user stuck on pistar-update v3.3 or v3.4, if yes then force update now
