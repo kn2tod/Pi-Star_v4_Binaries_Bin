@@ -153,7 +153,7 @@ def transferFile(ser, filename, fSize):
             dcount += len(data)
             ser.timeout = 5
             ser.write(data)
-            sys.stdout.write('\rDownloading, %3.1f%%...' % (dcount / float(fSize) * 100.0))
+            sys.stdout.write('\rUploading, %3.1f%%...' % (dcount / float(fSize) * 100.0))
             sys.stdout.flush()
             ser.timeout = .5
             time.sleep(.5)
@@ -198,7 +198,7 @@ if __name__ == "__main__":
     model_check = None
     if len(sys.argv) == 4:
         model_check = sys.argv[3]
-        pattern = re.compile("^NX\d{4}[TK]\d{3}$")
+        pattern = re.compile(r'^NX\d{4}[TK]\d{3}$')
         if not pattern.match(model_check):
             print(f"{RED}Invalid model name: {model_check}{RESET}")
             exit(1)
